@@ -6,11 +6,19 @@
     box-sizing: border-box;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ff6712;
     border: 2px solid #ff6712;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Configurações de navegações*/
@@ -45,7 +53,8 @@ nav a {
 .inicio {
     position: relative;
     width: 100%;
-    height: clamp(340px, 48vw, 520px);
+    flex: 1;
+    min-height: 340px;
     background-color: #ff5b0b;
     overflow: hidden;
 }
@@ -91,7 +100,7 @@ nav a {
 footer {
     background-color: #1f1f1f;
     color: #ffffff;
-    padding: 14px 4%;
+    padding: 20px 75px;
     min-height: 130px;
     font-size: 10px;
     font-weight: bold;
