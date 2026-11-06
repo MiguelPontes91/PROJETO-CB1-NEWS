@@ -1,3 +1,5 @@
+/*Configurações Gerais*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,54 +8,96 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #ff6712;
+    border: 2px solid #ff6712;
+    min-height: 100vh;
 }
+
+/*Configurações de navegações*/
 
 header {
-    min-height: 100vh;
-    background: linear-gradient(
-        to bottom,
-        #ff6500 0%,
-        #ff914d 40%,
-        #ffbf97 100%
-    );
-
-    nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 6%;
-    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-nav a {
-    color: #000;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.logo {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    padding: 0 20px;
+    gap: 45px;
+    padding: 45px 20px;
 }
 
-.logo img {
-    width: 500px;
-    max-width: 100%;
-    height: auto;
-    display: block;
+nav a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-main 
-    .area-preta {
-    width: 100%;
-    height: 500px;
-    background-color: #1f1f1f;
-    border-radius: 70px 70px 0 0;
-    margin-top: -30px;
+/*Inicio*/
+
+.inicio {
     position: relative;
+    width: 100%;
+    height: clamp(340px, 48vw, 520px);
+    background-color: #ff5b0b;
+    overflow: hidden;
 }
+
+/*Prédios*/
+
+.predios {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/*Logo*/
+
+.logo {
+    position: absolute;
+    left: 4%;
+    top: 270%;
+    transform: translateY(-50%);
+    width: 60%;
+    height: auto;
+    z-index: 2;
+}
+
+/*Garota e Balões*/
+
+.personagem {
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+    height: 80%;
+    width: auto;
+    max-width: 40%;
+    object-fit: contain;
+    z-index: 3;
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 14px 4%;
+    min-height: 130px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+footer p {
+    margin-bottom: 2px;
 }
