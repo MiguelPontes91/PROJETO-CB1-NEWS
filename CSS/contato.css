@@ -1,3 +1,4 @@
+
 body{ 
     font-family: Arial, Helvetica, sans-serif;
     background-color: #1f1f1f;
@@ -5,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 nav {
     background-color: #ff5900;
     width: 100%;
@@ -17,17 +19,15 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-
     font-size: 11px;
     font-weight: bold;
-
     text-align: center;
     white-space: nowrap;
-
     transition: color 0.3s;
 }
+
 header{
-   min-height: auto;
+    min-height: auto;
     height: auto;
     background-color: #ff5900;
     width: 100%;
@@ -36,27 +36,52 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 p{
     color: #ffffff;
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-h1{
+
+h1 {
     color: #ff5900;
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
-ul{
+
+/* Texto principal */
+.texto-contato {
+    max-width: 1300px;
+    margin: 0 auto 25px;
+    text-align: justify;
+}
+
+/* Lista de contatos */
+.contlista {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.contlista ul {
     list-style-type: disc;
     padding-left: 20px;
     color: #ffffff;
     font-size: 14px;
+    text-align: left;
 }
+
+.contlista li {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Links */
 a:link {
-  display: inline-block;
+    display: inline-block;
     background-color: #ff5900;
     color: #1f1f1f;
     text-decoration: none;
@@ -66,25 +91,24 @@ a:link {
     transition: 0.3s;
     font-weight: bold;
 }
+
 a:visited {
-    color: #1f1f1f;;
+    color: #1f1f1f;
 }
+
 a:hover {
     background-color: #ffffff;
     color: #ff5900;
     border-color: #ffffff;
     text-decoration: none;
 }
+
 a:active {
-     background-color: #ff6500;
+    background-color: #ff6500;
     color: #ffffff;
 }
-.contlista .li{
-    margin-bottom: 10px;
-    color: #ffffff;
-    font-size: 14px;
-    text-align: left;
-}
+
+/* Rodapé */
 footer{
     background-color: #ff6500;
     color: white;
@@ -96,12 +120,14 @@ footer{
     border-radius: 60px 60px 0 0;
     margin-top: 20px;
 }
+
 footer p{
-   min-height: 90px;
-        padding: 12px 6%;
-        border-radius: 35px 35px 0 0;
-        margin-top: 25px;
+    min-height: 90px;
+    padding: 12px 6%;
+    border-radius: 35px 35px 0 0;
+    margin-top: 25px;
 }
+
 .logocont-footer img{
     width: 220px;
     max-width: 100%;
