@@ -90,6 +90,14 @@ nav a {
     transition: color 0.3s;
 }
 
+nav a.pagina-atual {
+    color: #ff6712;
+}
+
+nav a:hover {
+    color: #ff6712;
+}
+
 
 main {
     flex: 1;

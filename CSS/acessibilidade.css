@@ -178,3 +178,12 @@ body.modo-daltonismo button {
     color: #fff !important;
     border: 2px solid #f0b323 !important;
 }
+
+/* Aumenta o espaçamento para facilitar a leitura */
+    .espacamento-legivel p,
+    .espacamento-legivel li {
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+

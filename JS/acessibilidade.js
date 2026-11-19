@@ -7,8 +7,9 @@ const diminuir = document.getElementById("diminuirTexto");
 const contraste = document.getElementById("alternarContraste");
 const daltonismo = document.getElementById("alternarDaltonismo");
 const restaurar = document.getElementById("restaurarAcessibilidade");
+const espacamento = document.getElementById("alternarEspacamento");
 
-if (botao && painel && aumentar && diminuir && contraste && daltonismo && restaurar) {
+if (botao && painel && aumentar && diminuir && contraste && daltonismo && restaurar && espacamento) {
 
     let tamanhoTexto = 0;
 
@@ -75,6 +76,18 @@ if (botao && painel && aumentar && diminuir && contraste && daltonismo && restau
         atualizarBotoes();
     });
 
+    // Ativa ou desativa o aumento de espaçamento
+    if (espacamento) {
+        espacamento.addEventListener("click", () => {
+         document.body.classList.toggle("espacamento-legivel");
+        const ativar = !document.body.classList.contains("espacamento-legivel");
+
+        espacamento.textContent = ativar
+            ? "Restaurar espaçamento do texto"
+            : "Aumentar espaçamento do texto";
+    });
+}
+
     // Restaura as configurações originais
     restaurar.addEventListener("click", () => {
         tamanhoTexto = 0;
@@ -86,11 +99,15 @@ if (botao && painel && aumentar && diminuir && contraste && daltonismo && restau
 
         document.body.classList.remove(
             "alto-contraste",
-            "modo-daltonismo"
+            "modo-daltonismo",
+            "espacamento-legivel"
         );
 
         atualizarBotoes();
+
     });
 
     atualizarBotoes();
+
 }
+
