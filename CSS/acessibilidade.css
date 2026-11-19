@@ -1,0 +1,189 @@
+
+/* Botão de acessibilidade */
+.acessibilidade {
+    border: none;
+    cursor: pointer;
+}
+
+/* Painel de acessibilidade */
+.painel-acessibilidade {
+    position: fixed;
+    right: 20px;
+    bottom: 115px;
+    width: 250px;
+    background-color: #292929;
+    color: white;
+    padding: 18px;
+    border: 2px solid #ff6712;
+    border-radius: 12px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.painel-acessibilidade[hidden] {
+    display: none;
+}
+
+.painel-acessibilidade h3 {
+    margin-top: 0;
+    color: #ff6712;
+}
+
+.controle-texto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.painel-acessibilidade button {
+    cursor: pointer;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.opcao-acessibilidade {
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+/* =================================
+   MODO ALTO CONTRASTE
+================================= */
+
+body.alto-contraste {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste nav,
+body.alto-contraste main,
+body.alto-contraste footer,
+body.alto-contraste section,
+body.alto-contraste .legislacao,
+body.alto-contraste .lei,
+body.alto-contraste .destaque,
+body.alto-contraste .outras-leis,
+body.alto-contraste .referencias-legislacao {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste p,
+body.alto-contraste li,
+body.alto-contraste span,
+body.alto-contraste strong {
+    color: #fff !important;
+}
+
+body.alto-contraste a {
+    color: #ffff00 !important;
+    text-decoration: underline;
+}
+
+body.alto-contraste .titulo-legislacao,
+body.alto-contraste .destaque {
+    background-color: #222 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+body.alto-contraste .lei {
+    border: 1px solid #fff !important;
+}
+
+body.alto-contraste button {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+body.alto-contraste .painel-acessibilidade {
+    background-color: #000 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+/* =================================
+   MODO PARA DALTONISMO
+================================= */
+
+body.modo-daltonismo {
+    background-color: #f4f6f8 !important;
+    color: #172b3a !important;
+}
+
+body.modo-daltonismo header,
+body.modo-daltonismo nav,
+body.modo-daltonismo footer {
+    background-color: #17324d !important;
+    color: #fff !important;
+}
+
+body.modo-daltonismo main,
+body.modo-daltonismo section,
+body.modo-daltonismo .legislacao {
+    background-color: #f4f6f8 !important;
+    color: #172b3a !important;
+}
+
+body.modo-daltonismo h1,
+body.modo-daltonismo h2,
+body.modo-daltonismo h3,
+body.modo-daltonismo p,
+body.modo-daltonismo li,
+body.modo-daltonismo span,
+body.modo-daltonismo strong {
+    color: #172b3a;
+}
+
+body.modo-daltonismo a {
+    color: #005a9c !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+body.modo-daltonismo .titulo-legislacao,
+body.modo-daltonismo .destaque {
+    background-color: #f0b323 !important;
+    color: #172b3a !important;
+    border: 2px solid #17324d !important;
+}
+
+body.modo-daltonismo .lei,
+body.modo-daltonismo .outras-leis,
+body.modo-daltonismo .referencias-legislacao {
+    background-color: #fff !important;
+    color: #172b3a !important;
+    border: 1px solid #52718a !important;
+}
+
+body.modo-daltonismo .painel-acessibilidade {
+    background-color: #17324d !important;
+    color: #fff !important;
+    border: 2px solid #f0b323 !important;
+}
+
+body.modo-daltonismo .painel-acessibilidade h3,
+body.modo-daltonismo .painel-acessibilidade span {
+    color: #fff !important;
+}
+
+body.modo-daltonismo button {
+    background-color: #17324d !important;
+    color: #fff !important;
+    border: 2px solid #f0b323 !important;
+}
+
+/* Aumenta o espaçamento para facilitar a leitura */
+    .espacamento-legivel p,
+    .espacamento-legivel li {
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+

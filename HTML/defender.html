@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/defender.css">
+     <link rel="stylesheet" href="../CSS/acessibilidade.css">
     <title>Defender</title>
 </head>
 <body>
@@ -14,20 +15,23 @@
         </div>
 
         <nav>
-            <a href="#defender" class="pagina-atual" aria-current="page">
-                O QUE É CYBERBULLYING?
-            </a>
-            <a href="ondecorre.html">ONDE OCORRE?</a>
-            <a href="defender.html">COMO IDENTIFICAR?</a>
+            <a href="oquecy.html">O QUE É CYBERBULLYING?</a>
+            <a href="ondeocorre.html">ONDE OCORRE?</a>
+            <a href="#identificar">COMO IDENTIFICAR?</a>
             <a href="defender.html">COMO SE DEFENDER?</a>
             <a href="contato.html">MEIOS DE CONTATO</a>
+            <a href="Punicoes.html"> LEGISLAÇÃO E PUNIÇÕES</a>
         </nav>
 
     </header>
 
 <main>
-    <section class="conteudo" id="defender">
-        <center><h1>COMO SE DEFENDER?</h1>
+        <section id="defendercyber" class="titulo">
+            <h1>COMO SE DEFENDER?</h1>
+        </section>
+
+    <section class="conteudo">
+        
         <p> O cyberbullying é uma forma de violência virtual que acontece por meio de ofensas, ameaças, humilhações e divulgação de conteúdos constrangedores na internet. Esse problema pode causar tristeza, ansiedade, insegurança e prejudicar a saúde emocional das vítimas. Por isso, é importante saber como se proteger e enfrentar essas situações.
 Uma das principais formas de defesa é bloquear o agressor, denunciar as publicações ofensivas e guardar provas, como capturas de tela das mensagens. Também é fundamental procurar ajuda de familiares, professores ou outros adultos de confiança. Pedir ajuda não é sinal de fraqueza, mas uma atitude de coragem.
 Portanto, combater o cyberbullying é uma responsabilidade de todos. Respeitar as diferenças, agir com empatia e utilizar a internet de forma consciente são atitudes essenciais para construir um ambiente virtual mais seguro e acolhedor. O bullying e o cyberbullying são crimes no Brasil, regulamentados pela Lei nº 14.811/2024 (que alterou o Código Penal), podendo ser punido com multa.</p>
@@ -46,37 +50,73 @@ Portanto, combater o cyberbullying é uma responsabilidade de todos. Respeitar a
 
 
 <footer>
-    <div class="grupo">
-        <p><strong>GRUPO:</strong></p>
-        <p>Nome dos Integrantes</p>
-    </div>
+        <div class="grupo">
+            <p><strong>GRUPO 2: CYBERBULLYING</strong></p>
+            <p>Arthur Teles Ferreira</p>
+            <p>Eduardo Henio Simões Wachholz</p>
+            <p>Jaislan dos Santos Silva</p>
+            <p>João Eduardo do Nascimento Melo</p>
+            <p>Luciano Castor de Souza Filho</p>
+            <p>Miguel de Pontes Nascimento</p>
+        </div>
 
-    <div class="logo-rodape">
-        <img src="../Img/CB1 NEWS PRETA E BRANCA.png" alt="CB1 News">
-    </div>
-    <div class="acessibilidade">
+        <div class="logo-rodape">
+            <a href="index.html">
+            <img src="../Img/CB1 NEWS PRETA E BRANCA.png" alt="CB1 NEWS">
+            </a>
+        </div>
 
-            <svg viewBox="0 0 24 24" aria-label="Acessibilidade">
+     <button class="acessibilidade" id="botaoAcessibilidade"
+                aria-label="Abrir opções de acessibilidade"
+                aria-expanded="false"
+                aria-controls="painelAcessibilidade">
 
+            <svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="5" r="2" fill="black"/>
 
                 <path d="M5 9 Q12 6 19 9"
-                    stroke="black"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"/>
+                    stroke="black" stroke-width="2"
+                    fill="none" stroke-linecap="round"/>
 
                 <path d="M12 8 L12 15 M12 11 L8 15 M12 11 L16 15 M12 15 L9 21 M12 15 L15 21"
-                    stroke="black"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"/>
-
+                    stroke="black" stroke-width="2"
+                    fill="none" stroke-linecap="round"/>
             </svg>
+        </button>
 
+    </footer>
+
+
+    <div class="painel-acessibilidade" id="painelAcessibilidade" hidden>
+
+        <h3>Acessibilidade</h3>
+
+        <div class="controle-texto">
+            <span>Tamanho do texto</span>
+
+            <div>
+                <button id="diminuirTexto" aria-label="Diminuir texto">A-</button>
+                <button id="aumentarTexto" aria-label="Aumentar texto">A+</button>
+            </div>
         </div>
 
-</footer>
+        <button id="alternarContraste" class="opcao-acessibilidade">
+            Ativar alto contraste
+        </button>
 
+        <button id="restaurarAcessibilidade" class="opcao-acessibilidade">
+            Restaurar padrão
+        </button>
+
+        <button id="alternarDaltonismo" class="opcao-acessibilidade">
+        Ativar modo para daltonismo
+        </button>
+
+        <button id="alternarEspacamento" class="opcao-acessibilidade">
+        Aumentar espaçamento do texto
+        </button>
+    </div>
+
+    <script src="../JS/acessibilidade.js"></script>
 </body>
 </html>

@@ -1,0 +1,456 @@
+
+/* Configurações Gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+}
+
+
+/* Cabeçalho */
+
+header {
+    background-color: #1f1f1f;
+    width: 100%;
+
+    padding: 18px 20px 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    background-color: #1f1f1f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 115px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* Menu */
+
+nav {
+    width: 100%;
+    background-color: #1f1f1f;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    text-align: center;
+    white-space: nowrap;
+
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6712;
+}
+
+
+/* Conteúdo Principal */
+
+main {
+    flex: 1;
+}
+
+.titulo-legislacao {
+    background-color: #ff6712;
+
+    width: 100%;
+    padding: 15px 10px;
+
+    text-align: center;
+
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+}
+
+.legislacao {
+    width: 65%;
+    max-width: 780px;
+
+    margin: 28px auto 45px;
+}
+
+.legislacao h1 {
+    background-color: #ff6712;
+
+    width: 100%;
+
+    padding: 15px 10px;
+
+    margin-bottom: 28px;
+
+    text-align: justify;
+
+    font-size: 29px;
+    font-weight: bold;
+    color: white;
+}
+
+.texto-legislacao {
+    font-size: 16px;
+    line-height: 1.45;
+
+    text-align: justify;
+
+    margin-bottom: 22px;
+
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+}
+
+.legislacao a {
+    color: #ff6712;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: color 0.3s;
+}
+
+.legislacao a:hover {
+    color: #ff914f;
+    text-decoration: underline;
+}
+
+
+/* Blocos das Leis */
+
+.leis-legislacao {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.lei {
+    background-color: #292929;
+    padding: 20px;
+    border-left: 4px solid #ff6712;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.lei h2,
+.lei h3,
+.legislacao > h2,
+.referencias-legislacao h2 {
+    color: #ff6712;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ff6712;
+    width: fit-content;
+}
+
+
+/* Destaque do Cyberbullying */
+
+.destaque {
+    background-color: #ff6712;
+    color: black;
+
+    padding: 20px 25px;
+
+    margin: 30px 0;
+
+    border-radius: 12px;
+}
+
+.destaque h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.destaque .texto-legislacao {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.destaque a {
+    color: black;
+}
+
+
+/* Outras Legislações */
+
+.legislacao > h2 {
+    color: #ff6712;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.outras-leis {
+    margin-top: 20px;
+}
+
+.outras-leis p {
+    border-left: 3px solid #ff6712;
+    padding-left: 12px;
+    margin-bottom: 22px;
+}
+
+/* Referências */
+
+.referencias-legislacao {
+    margin-top: 35px;
+    padding-top: 20px;
+
+    border-top: 1px solid #555;
+}
+
+.referencias-legislacao h2 {
+    color: #ff6712;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+.referencias-legislacao ul {
+    list-style: none;
+}
+
+.referencias-legislacao li {
+    position: relative;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    text-align: left;
+
+    padding-left: 14px;
+
+    margin-bottom: 14px;
+}
+
+.referencias-legislacao li::before {
+    content: "•";
+
+    color: #ff6712;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #ff6712;
+
+    width: 100%;
+    min-height: 100px;
+
+    border-radius: 38px 38px 0 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+
+    align-items: center;
+
+    padding: 12px 7%;
+
+    color: black;
+
+    margin-top: 30px;
+}
+
+.grupo {
+    font-size: 10px;
+
+    line-height: 1.2;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1px;
+}
+
+.logo-rodape {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-rodape img {
+    width: 135px;
+    height: auto;
+
+    display: block;
+}
+
+.acessibilidade {
+    width: 27px;
+    height: 27px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    justify-self: end;
+}
+
+.acessibilidade svg {
+    width: 19px;
+    height: 19px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 16px 8px 12px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .logo {
+        margin-bottom: 18px;
+    }
+
+    nav {
+        justify-content: space-between;
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 8px;
+    }
+
+    .legislacao {
+        width: 86%;
+        max-width: none;
+
+        margin: 25px auto 40px;
+    }
+
+    .legislacao h1 {
+        padding: 14px 8px;
+
+        font-size: 23px;
+    }
+
+    .texto-legislacao {
+        font-size: 14px;
+        line-height: 1.45;
+
+        text-align: left;
+
+        margin-bottom: 20px;
+    }
+
+    .lei h2,
+    .lei h3 {
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+
+    .destaque {
+        padding: 17px 18px;
+        margin: 25px 0;
+    }
+
+    .destaque h3 {
+        font-size: 18px;
+    }
+
+    .legislacao > h2,
+    .referencias-legislacao h2 {
+        font-size: 17px;
+    }
+
+    .referencias-legislacao li {
+        font-size: 12px;
+        line-height: 1.45;
+
+        margin-bottom: 13px;
+    }
+
+    footer {
+        min-height: 90px;
+
+        padding: 12px 6%;
+
+        border-radius: 35px 35px 0 0;
+
+        margin-top: 25px;
+    }
+
+    .grupo {
+        font-size: 9px;
+        line-height: 1.2;
+        gap: 1px;
+    }
+
+    .logo-rodape img {
+        width: 105px;
+    }
+
+    .acessibilidade {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
