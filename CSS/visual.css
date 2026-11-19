@@ -48,6 +48,11 @@ nav a {
     white-space: nowrap;
 }
 
+nav a:hover {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
 /*Inicio*/
 
 .inicio {
