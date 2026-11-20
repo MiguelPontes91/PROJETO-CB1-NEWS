@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meios de Contato</title>
     <link rel="stylesheet" href="../CSS/contato.css">
+     <link rel="stylesheet" href="../CSS/acessibilidade.css">
 </head>
 
 <body>
@@ -34,13 +35,13 @@
                 
 
             <p class="texto-contato">
-                O cyberbullying é um problema que pode afetar profundamente a vida de uma pessoa, causando sofrimento emocional, medo, ansiedade e insegurança. Por isso, é fundamental conhecer os meios de contato disponíveis para buscar ajuda, receber orientação e denunciar situações de violência virtual.
+                O <strong>cyberbullying</strong> é um problema que pode afetar profundamente a vida de uma pessoa, causando <strong>sofrimento emocional, medo, ansiedade e insegurança</strong>. Por isso, é fundamental conhecer os meios de contato disponíveis para <strong>buscar ajuda</strong>, receber orientação e denunciar situações de violência virtual.
 
-                Entre os principais canais de atendimento estão o Disque 100, que recebe denúncias de violações de direitos humanos; a SaferNet Brasil, que oferece orientação e recebe denúncias relacionadas a crimes e violações na internet; e o CVV (Centro de Valorização da Vida), que disponibiliza apoio emocional gratuito pelo telefone 188. Também é possível procurar o Conselho Tutelar e a Polícia Civil.
+                Entre os principais canais de atendimento estão o <strong>Disque 100</strong>, que recebe denúncias de violações de direitos humanos; a <strong>SaferNet Brasil</strong>, que oferece orientação e recebe denúncias relacionadas a crimes e violações na internet; e o <strong>CVV (Centro de Valorização da Vida)</strong>, que disponibiliza apoio emocional gratuito pelo <strong>telefone 188</strong>. Também é possível procurar o <strong>Conselho Tutelar e a Polícia Civil</strong>.
 
-                No Brasil, o cyberbullying é reconhecido como crime pela Lei nº 14.811/2024, que acrescentou ao Código Penal o artigo 146-A, estabelecendo pena de reclusão de 2 a 4 anos e multa para a intimidação sistemática virtual, caso a conduta não constitua crime mais grave. Além disso, a Lei nº 13.185/2015 instituiu o Programa de Combate à Intimidação Sistemática, incentivando a prevenção e o combate ao bullying.
+                No Brasil, o cyberbullying é reconhecido como crime pela <strong>Lei nº 14.811/2024</strong>, que acrescentou ao Código Penal o <strong>artigo 146-A</strong>, estabelecendo pena de <strong>reclusão de 2 a 4 anos e multa</strong> para a intimidação sistemática virtual, caso a conduta não constitua crime mais grave. Além disso, a <strong>Lei nº 13.185/2015</strong> instituiu o Programa de Combate à Intimidação Sistemática, incentivando a prevenção e o combate ao bullying.
 
-                Portanto, é importante lembrar que nenhuma vítima precisa enfrentar o cyberbullying sozinha. Buscar ajuda, conversar com pessoas de confiança e utilizar os canais de denúncia são atitudes fundamentais para combater a violência virtual.
+                Portanto, é importante lembrar que <strong>nenhuma vítima precisa enfrentar o cyberbullying sozinha</strong>. <strong>Buscar ajuda</strong>, conversar com <strong>pessoas de confiança</strong> e utilizar os <strong>canais de denúncia</strong> são atitudes fundamentais para combater a violência virtual.
             </p>
 
             <div class="contlista">
@@ -74,27 +75,55 @@
         </div>
 
 
-        <div class="acessibilidade">
+        <button class="acessibilidade" id="botaoAcessibilidade"
+                aria-label="Abrir opções de acessibilidade"
+                aria-expanded="false"
+                aria-controls="painelAcessibilidade">
 
-            <svg viewBox="0 0 24 24" aria-label="Acessibilidade">
-
+            <svg viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="5" r="2" fill="black"/>
 
                 <path d="M5 9 Q12 6 19 9"
-                    stroke="black"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"/>
+                    stroke="black" stroke-width="2"
+                    fill="none" stroke-linecap="round"/>
 
                 <path d="M12 8 L12 15 M12 11 L8 15 M12 11 L16 15 M12 15 L9 21 M12 15 L15 21"
-                    stroke="black"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"/>
-
+                    stroke="black" stroke-width="2"
+                    fill="none" stroke-linecap="round"/>
             </svg>
+        </button>
 
-        </div>
 </footer>
+ <div class="painel-acessibilidade" id="painelAcessibilidade" hidden>
+
+        <h3>Acessibilidade</h3>
+
+        <div class="controle-texto">
+            <span>Tamanho do texto</span>
+
+            <div>
+                <button id="diminuirTexto" aria-label="Diminuir texto">A-</button>
+                <button id="aumentarTexto" aria-label="Aumentar texto">A+</button>
+            </div>
+        </div>
+
+        <button id="alternarContraste" class="opcao-acessibilidade">
+            Ativar alto contraste
+        </button>
+
+        <button id="restaurarAcessibilidade" class="opcao-acessibilidade">
+            Restaurar padrão
+        </button>
+
+        <button id="alternarDaltonismo" class="opcao-acessibilidade">
+        Ativar modo para daltonismo
+        </button>
+
+        <button id="alternarEspacamento" class="opcao-acessibilidade">
+        Aumentar espaçamento do texto
+        </button>
+    </div>
+
+    <script src="../JS/acessibilidade.js"></script>
 </body>
 </html>
