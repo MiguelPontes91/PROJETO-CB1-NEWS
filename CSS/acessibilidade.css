@@ -49,9 +49,7 @@
 }
 
 
-/* =================================
-   MODO ALTO CONTRASTE
-================================= */
+/* MODO ALTO CONTRASTE */
 
 body.alto-contraste {
     background-color: #000 !important;
@@ -108,9 +106,7 @@ body.alto-contraste .painel-acessibilidade {
     border: 2px solid #ffff00 !important;
 }
 
-/* =================================
-   MODO PARA DALTONISMO
-================================= */
+/*   MODO PARA DALTONISMO */
 
 body.modo-daltonismo {
     background-color: #f4f6f8 !important;
