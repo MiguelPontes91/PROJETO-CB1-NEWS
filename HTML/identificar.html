@@ -4,33 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CB1 NEWS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>Como Identificar?</title>
+
     <link rel="stylesheet" href="../CSS/identificar.css">
+    <link rel="stylesheet" href="../CSS/acessibilidade.css">
     <link rel="icon" type="image/png" href="../Img/LOGO LARANJA E BRANCA.png">
 </head>
 
 <body>
 
+    <!-- Cabeçalho -->
+
     <header>
 
         <div class="logo">
-            <img src="../Img/LOGO LARANJA E BRANCA.png" alt="CB1 NEWS">
+            <a href="index.html">
+                <img src="../Img/LOGO LARANJA E BRANCA.png" alt="CB1 NEWS">
+            </a>
         </div>
 
         <nav>
             <a href="oquecy.html">O QUE É CYBERBULLYING?</a>
-            <a href="ondecorre.html">ONDE OCORRE?</a>
-            <a href="#identificar" class="pagina-atual" aria-current="page">
-                COMO IDENTIFICAR?
-            </a>
+            <a href="ondeocorre.html">ONDE OCORRE?</a>
+            <a href="identificar.html" class="pagina-atual" aria-current="page">COMO IDENTIFICAR?</a>
             <a href="defender.html">COMO SE DEFENDER?</a>
             <a href="contato.html">MEIOS DE CONTATO</a>
+            <a href="Punicoes.html">LEGISLAÇÃO E PUNIÇÕES</a>
         </nav>
 
     </header>
+
+
+    <!-- Conteúdo -->
 
     <main>
 
@@ -38,11 +43,10 @@
             <h1>COMO IDENTIFICAR?</h1>
         </section>
 
-
         <section class="conteudo">
 
             <p>
-                Quem pratica <span class="laranja">cyberbullying</span> raramente
+                Quem pratica <strong>cyberbullying</strong> raramente
                 se apresenta como agressor. Muitas vezes é alguém simpático em
                 outros contextos, com boas notas, bom desempenho no trabalho ou
                 bem-visto pelos adultos. Por isso, identificar quem ataca,
@@ -51,7 +55,7 @@
             </p>
 
             <p>
-                <span class="vermelho">Um aviso importante:</span>
+                <strong>Um aviso importante:</strong>
                 Os sinais abaixo são indícios, não provas.
             </p>
 
@@ -94,24 +98,82 @@
 
     </main>
 
+
+    <!-- Rodapé -->
+
     <footer>
 
-        <div class="informacoes">
-            <p><strong>GRUPO:</strong></p>
-            <p><strong>Eduardo Henio Simões Wachholz</strong></p>
-            <p><strong>Arthur Teles Ferreira</strong></p>
-            <p><strong>João Eduardo do Nascimento</strong></p>
-            <p><strong>Luciano Castor de Souza Filho</strong></p>
-            <p><strong>Jaislan dos Santos Silva</strong></p>
-            <p><strong>Miguel de Pontes Nascimento</strong></p>
+        <div class="grupo">
+            <p><strong>GRUPO 2: CYBERBULLYING</strong></p>
+            <p>Arthur Teles Ferreira</p>
+            <p>Eduardo Henio Simões Wachholz</p>
+            <p>Jaislan dos Santos Silva</p>
+            <p>João Eduardo do Nascimento Melo</p>
+            <p>Luciano Castor de Souza Filho</p>
+            <p>Miguel de Pontes Nascimento</p>
         </div>
 
         <div class="logo-rodape">
-            <img src="../Img/CB1 NEWS PRETA E BRANCA.png" alt="CB1 NEWS">
+            <a href="index.html">
+                <img src="../Img/CB1 NEWS PRETA E BRANCA.png" alt="CB1 NEWS">
+            </a>
         </div>
+
+        <button class="acessibilidade" id="botaoAcessibilidade" type="button"
+                aria-label="Abrir opções de acessibilidade"
+                aria-expanded="false"
+                aria-controls="painelAcessibilidade">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="5" r="2" fill="black"/>
+
+                <path d="M5 9 Q12 6 19 9"
+                    stroke="black" stroke-width="2"
+                    fill="none" stroke-linecap="round"/>
+
+                <path d="M12 8 L12 15 M12 11 L8 15 M12 11 L16 15 M12 15 L9 21 M12 15 L15 21"
+                    stroke="black" stroke-width="2"
+                    fill="none" stroke-linecap="round"/>
+            </svg>
+        </button>
 
     </footer>
 
+
+    <!-- Painel de acessibilidade -->
+
+    <div class="painel-acessibilidade" id="painelAcessibilidade" hidden>
+
+        <h3>Acessibilidade</h3>
+
+        <div class="controle-texto">
+            <span>Tamanho do texto</span>
+
+            <div>
+                <button id="diminuirTexto" type="button" aria-label="Diminuir texto">A-</button>
+                <button id="aumentarTexto" type="button" aria-label="Aumentar texto">A+</button>
+            </div>
+        </div>
+
+        <button id="alternarContraste" class="opcao-acessibilidade" type="button">
+            Ativar alto contraste
+        </button>
+
+        <button id="restaurarAcessibilidade" class="opcao-acessibilidade" type="button">
+            Restaurar padrão
+        </button>
+
+        <button id="alternarDaltonismo" class="opcao-acessibilidade" type="button">
+            Ativar modo para daltonismo
+        </button>
+
+        <button id="alternarEspacamento" class="opcao-acessibilidade" type="button">
+            Aumentar espaçamento do texto
+        </button>
+
+    </div>
+
+    <script src="../JS/acessibilidade.js"></script>
 </body>
 
 </html>

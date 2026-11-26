@@ -1,3 +1,5 @@
+/* Configurações gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #1f1f1f;
     color: white;
 
@@ -22,6 +24,8 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Cabeçalho */
 
 header {
     background-color: #1f1f1f;
@@ -36,6 +40,7 @@ header {
 
 .logo {
     width: 100%;
+    background-color: #1f1f1f;
 
     display: flex;
     justify-content: center;
@@ -51,8 +56,12 @@ header {
     display: block;
 }
 
+
+/* Menu */
+
 nav {
     width: 100%;
+    background-color: #1f1f1f;
 
     display: flex;
     justify-content: space-around;
@@ -83,6 +92,8 @@ nav a:hover {
 }
 
 
+/* Conteúdo principal */
+
 main {
     flex: 1;
 }
@@ -104,7 +115,6 @@ main {
     color: white;
 }
 
-
 .conteudo {
     width: 65%;
     max-width: 780px;
@@ -123,6 +133,10 @@ main {
     word-break: normal;
     overflow-wrap: normal;
     hyphens: none;
+}
+
+.conteudo strong {
+    color: #ff6712;
 }
 
 .conteudo h2 {
@@ -165,16 +179,12 @@ main {
     top: 0;
 }
 
-.conteudo .laranja {
+.conteudo li strong {
     color: #ff6712;
-    font-weight: bold;
 }
 
-.conteudo .vermelho {
-    color: #ff6712;
-    font-weight: bold;
-}
 
+/* Rodapé */
 
 footer {
     background-color: #ff6712;
@@ -197,7 +207,7 @@ footer {
     margin-top: 30px;
 }
 
-.informacoes {
+.grupo {
     font-size: 10px;
 
     line-height: 1.2;
@@ -222,6 +232,34 @@ footer {
     display: block;
 }
 
+
+/* Botão de acessibilidade */
+
+.acessibilidade {
+    width: 27px;
+    height: 27px;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    justify-self: end;
+}
+
+.acessibilidade svg {
+    width: 19px;
+    height: 19px;
+}
+
+
+/* Ajuste a telas */
 
 @media (max-width: 600px) {
 
@@ -292,7 +330,7 @@ footer {
         margin-top: 25px;
     }
 
-    .informacoes {
+    .grupo {
         font-size: 9px;
         line-height: 1.2;
         gap: 1px;
@@ -300,6 +338,11 @@ footer {
 
     .logo-rodape img {
         width: 105px;
+    }
+
+    .acessibilidade {
+        width: 25px;
+        height: 25px;
     }
 
 }
