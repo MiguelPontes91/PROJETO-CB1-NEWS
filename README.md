@@ -102,20 +102,6 @@ Antes de `</body>`, carregue o script:
    ```
 > O script só roda se **todos** esses `id`s existirem na página. Se faltar algum, o recurso inteiro deixa de funcionar naquela página.
 ---
-Problemas conhecidos e próximos passos
-Pontos identificados na revisão do código e ainda pendentes:
-[ ] `Punicoes.html` referencia `../CSS/Punicoes.css`, mas o arquivo se chama `punicoes.css`. Funciona no Windows, mas falha em servidores Linux e no GitHub Pages (que diferenciam maiúsculas de minúsculas).
-[ ] Modo daltonismo: o texto do rodapé fica com baixo contraste (azul-escuro sobre azul-escuro) e os links do menu têm contraste insuficiente.
-[ ] Ícone do botão de acessibilidade é desenhado em preto fixo e desaparece nos modos de alto contraste e daltonismo (usar `currentColor` no SVG).
-[ ] Texto do botão de espaçamento aparece invertido ("Aumentar" quando está ativo) e não é atualizado ao restaurar o padrão.
-[ ] O link "Como identificar?" da página inicial aponta para `#identificar` em vez de `identificar.html`.
-[ ] O painel de acessibilidade ainda não existe em `index.html`, `oquecy.html` e `identificar.html`.
-[ ] Falta `<title>` em `Punicoes.html`.
-[ ] `ondeocorre.html` carrega `ondeocorre.css` duas vezes.
-[ ] As preferências de acessibilidade não são salvas ao trocar de página (sugestão: usar `localStorage`).
-[ ] Padronizar o nome "João Eduardo do Nascimento Melo", que aparece de formas diferentes entre as páginas.
-[ ] Melhorias no painel: fechar com a tecla `Esc`, mover o foco para dentro ao abrir e usar `aria-pressed` nos botões de alternância.
----
 Equipe
 Grupo 2: Cyberbullying
 Arthur Teles Ferreira
